@@ -34,14 +34,14 @@ if (isset($_POST["update"])) {
         $validExtensions = array("jpg", "jpeg", "png", "gif");
         if (in_array($imageFileType, $validExtensions)) {
             $targetFileDir = "uploads/";
-            $targetFileName = $targetFileDir . $name . "." . $imageFileType;
+            $targetFileName = $targetFileDir . date("Y-m-d") . "-" . $name . "." . $imageFileType;
 
             echo "File berhasil di upload";
 
         } else {
             echo "Hanya dapat mengupload file jpg, jpeg, png, dan gif.";
         }
-        $result = mysqli_query($conn, "UPDATE accessories SET name = '$name', description = '$description', price = '$price' image = '$targetFileName' WHERE id = '$id'");
+        $result = mysqli_query($conn, "UPDATE accessories SET name = '$name', description = '$description', price = '$price', image = '$targetFileName' WHERE id = '$id'");
 
 
     } else {

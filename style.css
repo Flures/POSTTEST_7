@@ -234,6 +234,7 @@ footer {
     color: #F2F3FF;
     text-align: center;
     padding: 20px 0;
+
     
 }
 
@@ -350,9 +351,12 @@ button[type="submit"]:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.product-list-container{
+    height: 100%;
+}
+
 .product-list {
     margin: 20px;
-    height: 100vh;
 }
 
 .product-list table {

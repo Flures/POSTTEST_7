@@ -58,7 +58,7 @@ if (isset($_POST["create"])) {
     $validExtensions = array("jpg", "jpeg", "png", "gif");
     if (in_array($imageFileType, $validExtensions)) {
         $targetFileDir = "uploads/";
-        $targetFileName = $targetFileDir . $name . "." . $imageFileType;
+        $targetFileName = $targetFileDir . date("Y-m-d") . "-" . $name . "." . $imageFileType;
 
         echo "File berhasil di upload";
 
