@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2023 at 12:27 PM
+-- Generation Time: Oct 23, 2023 at 08:10 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,11 +40,11 @@ CREATE TABLE `accessories` (
 --
 
 INSERT INTO `accessories` (`id`, `name`, `description`, `price`, `image`) VALUES
-(1, 'Mousepad Takodachi', 'Mousepad Speed Type Bercorak Takodachi', 120000, 'uploads/Mousepad Takodachi.png'),
-(2, 'ThieAudio Monarch MK II', 'High End In Ear Monitor Dengan Konfigurasi 1DD+6BA+2EST', 18000000, 'uploads/ThieAudio Monarch MK II.png'),
-(3, 'MonsGeek M3', 'Aluminium CNC Keyboard Wired Dengan Gasket Mount ', 1200000, 'uploads/MonsGeek M3.png'),
-(4, 'Logitech MX Master S', 'Mouse Dengan Form Factor Ergonomic', 1400000, 'uploads/Logitech MX Master S.png'),
-(5, 'Razer Kiyo Pro', 'Webcam 1080p Yang Support 60fps', 2200000, 'uploads/Razer Kiyo Pro.png');
+(1, 'MonsGeek M3', 'Aluminium CNC Keyboard Wired Dengan Gasket Mount', 1200000, 'uploads/2023-10-23-MonsGeek M3.png'),
+(2, 'Mousepad Takodachi', 'Mousepad Speed Type Bercorak Takodachi', 200000, 'uploads/2023-10-23-Mousepad Takodachi.png'),
+(3, 'ThieAudio Monarch MK II', 'High End In Ear Monitor Dengan Konfigurasi 1DD+6BA+2EST', 16000000, 'uploads/2023-10-23-ThieAudio Monarch MK II.png'),
+(4, 'Logitech MX Master S', 'Mouse Dengan Form Factor Ergonomic', 1200000, 'uploads/2023-10-23-Logitech MX Master S.png'),
+(5, 'Razer Kiyo Pro', 'Webcam 1080p Yang Support 60fps', 1800000, 'uploads/2023-10-23-Razer Kiyo Pro.png');
 
 --
 -- Indexes for dumped tables
