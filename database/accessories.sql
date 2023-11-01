@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2023 at 08:10 AM
+-- Generation Time: Nov 01, 2023 at 03:06 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -46,6 +46,28 @@ INSERT INTO `accessories` (`id`, `name`, `description`, `price`, `image`) VALUES
 (4, 'Logitech MX Master S', 'Mouse Dengan Form Factor Ergonomic', 1200000, 'uploads/2023-10-23-Logitech MX Master S.png'),
 (5, 'Razer Kiyo Pro', 'Webcam 1080p Yang Support 60fps', 1800000, 'uploads/2023-10-23-Razer Kiyo Pro.png');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(5) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`) VALUES
+(2, 'username', '$2y$10$haZzpJw4ZftBAYLI/7BMT.uzU04wS7yBjWgW9OsMjR.DQrOtPT/9q'),
+(3, 'username2', '$2y$10$vNkScobUvrW.9BHf4nMADO/wtXLr74GXZcQ6hevf7XSkrTvnSbTBi'),
+(4, 'wilson', '$2y$10$2Tqqwrpq8swK0AJlGv4zdOh/HG767QW3FML.UEDUyY6B07kWAe1dW'),
+(5, 'elgato', '$2y$10$DP281OQRAtOSrZHl8ISXduUP1.2nJUUp3TcUZPJoNLPEFv7iXEQVK');
+
 --
 -- Indexes for dumped tables
 --
@@ -57,6 +79,12 @@ ALTER TABLE `accessories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -64,6 +92,12 @@ ALTER TABLE `accessories`
 -- AUTO_INCREMENT for table `accessories`
 --
 ALTER TABLE `accessories`
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
   MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
