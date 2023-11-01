@@ -1,6 +1,17 @@
 <?php require("includes/connection.php") ?>
 
 <?php
+session_start();
+
+if (!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
+
+
+<?php
 
 if (isset($_GET["id"])) {
     $id = $_GET["id"];
